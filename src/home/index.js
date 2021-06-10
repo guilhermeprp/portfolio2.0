@@ -40,9 +40,17 @@ function Home() {
       </section>
 
       <section id="section-skills" className="section-home">
-        <h1 data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-          Skills
-        </h1>
+        <div className="wrapper">
+          <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+            <div className="section-title-row">
+              <h1 className="section-title">
+                {"<"} Skills<span className="blink-caret">|</span>
+              </h1>
+
+              <div className="section-background-line"></div>
+            </div>
+          </div>
+        </div>
       </section>
     </div>
   );

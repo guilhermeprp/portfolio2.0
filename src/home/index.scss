@@ -3,6 +3,7 @@
 .background-home {
   background-color: var(--black);
   color: var(--white);
+  scroll-snap-type: y mandatory;
 }
 
 .section-home {

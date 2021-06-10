@@ -1,12 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./index.scss";
 import background from "../assets/video/home-background.mp4";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Home() {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  });
+
   return (
     <div className="background-home">
       <section id="section-first" className="section-home">
-        <div className="box-titles">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="200"
+          data-aos-duration="1000"
+          className="box-titles"
+        >
           <h4>GUILHERME PIMENTA</h4>
           <h1>Front End Developer</h1>
           <h3>
@@ -28,7 +40,9 @@ function Home() {
       </section>
 
       <section id="section-skills" className="section-home">
-        <h1>Skills</h1>
+        <h1 data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+          Skills
+        </h1>
       </section>
     </div>
   );

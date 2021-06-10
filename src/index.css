@@ -2,6 +2,7 @@
   --pink: #fe03cb;
   --black: #020104;
   --white: #fff;
+  --red: #ed0839;
 }
 
 * {
@@ -11,6 +12,7 @@
   text-decoration: none;
   scroll-behavior: smooth;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  scrollbar-width: 0;
 }
 
 body {
@@ -32,4 +34,25 @@ video {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--black);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--red);
 }

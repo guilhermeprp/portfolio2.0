@@ -1,7 +1,8 @@
 import React from "react";
-import background from "../../assets/video/home-background.mp4";
+import background from "../../../assets/video/home-background.mp4";
+import "./banner.scss";
 
-export default function Banner() {
+export function Banner() {
   return (
     <section id="section-banner" className="sections">
       <div

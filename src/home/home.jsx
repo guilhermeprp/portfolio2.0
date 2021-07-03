@@ -1,10 +1,11 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
-import "./index.scss";
+import "./home.scss";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Banner from "./sections/banner";
-import Skills from "./sections/skills";
+import { Banner } from "./components/banner/banner.jsx";
+import { Skills } from "./components/skills/skills.jsx";
+import { Projects } from "./components/projects/projects.jsx";
 
 function Home() {
   useEffect(() => {
@@ -22,6 +23,7 @@ function Home() {
     >
       <Banner />
       <Skills />
+      <Projects />
     </motion.div>
   );
 }

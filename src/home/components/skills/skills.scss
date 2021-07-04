@@ -1,0 +1,82 @@
+// Skills
+
+.skills-box-section {
+  text-align: center;
+  text-align: -webkit-center;
+}
+
+.skills-box {
+  display: inline-block;
+  position: relative;
+  max-width: 150px;
+  overflow: hidden;
+
+  .skills-shadow {
+    transition: 0.5s;
+  }
+  > p {
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    font-weight: 900;
+    opacity: 0;
+    -webkit-animation: textExpandIn 1s cubic-bezier(0.55, 0.085, 0.68, 0.53)
+      both;
+    animation: textExpandOut 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  }
+}
+
+.skills-box:hover {
+  .skills-shadow {
+    filter: blur(10px) opacity(0.3);
+  }
+  .skills {
+    filter: opacity(1) saturate(1.2);
+  }
+  > p {
+    animation: textExpandIn 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    opacity: 1;
+  }
+}
+
+.skills {
+  transition: 0.1s;
+  display: flex;
+  height: 150px;
+  width: 150px;
+}
+
+.skills-shadow {
+  transition: 0.5s;
+  position: absolute;
+  filter: opacity(0.3) saturate(0);
+  height: 150px;
+  width: 150px;
+  transform: translateX(-75px);
+}
+
+@keyframes textExpandIn {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    text-shadow: 0 0 3px silver;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes textExpandOut {
+  0% {
+    text-shadow: 0 0 3px silver;
+    filter: blur(0.01);
+  }
+  100% {
+    letter-spacing: -0.5em;
+    filter: blur(12px) opacity(0%);
+  }
+}

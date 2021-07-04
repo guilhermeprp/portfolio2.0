@@ -1,17 +1,24 @@
-import "./index.scss";
+import "./landing.scss";
 import background from "../assets/video/landing-background.mp4";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 function App() {
   return (
-    <div className="landing-body">
+    <motion.div
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+      initial={{ opacity: 0 }}
+      exit={{ opacity: 0 }}
+      className="landing-body"
+    >
       <Link to="/home" className="press-start-background">
         <h1>Press Start</h1>
       </Link>
-      <video autoplay="true" loop="true" muted="true">
+      <video autoPlay={true} muted={true} loop={true}>
         <source src={background} type="video/mp4" />
       </video>
-    </div>
+    </motion.div>
   );
 }
 

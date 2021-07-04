@@ -1,0 +1,110 @@
+.projects-box-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.projects-row {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.projects-img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: rgba(var(--red), 0.5);
+  flex: 0 0 100%;
+  aspect-ratio: 16/9;
+  margin: auto;
+  overflow: hidden;
+  outline: none;
+  border-radius: 5px;
+
+  &:hover:before {
+    transform: scale(1);
+  }
+
+  &:before {
+    border-radius: 50%;
+    transform-origin: bottom;
+    transition: 0.5s;
+    transform: scale(0);
+    content: "Visit";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 900;
+    width: 150%;
+    aspect-ratio: 1/1;
+    position: absolute;
+    background-color: rgba(190, 6, 47, 0.5);
+  }
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+  }
+}
+
+.projects-description-box {
+  flex: 3 3 300px;
+  margin: auto;
+  h2 {
+    font-size: 2.5rem;
+  }
+  p {
+    font-size: 1.3rem;
+    margin: 7px 0;
+  }
+  .text-link {
+    color: var(--red);
+    font-weight: 700;
+    font-size: 1.5rem;
+    transition: 0.3s;
+
+    &:hover {
+      color: var(--pink);
+      text-shadow: 0 0 4px var(--red);
+      text-decoration: none;
+      svg {
+        transform: translateX(5px);
+      }
+    }
+
+    svg {
+      transition: 0.3s;
+    }
+
+    span {
+      margin-right: 5px;
+    }
+  }
+}
+
+.order-2 {
+  order: unset;
+}
+
+@media (min-width: 801px) {
+  .order-2 {
+    order: 2;
+  }
+
+  .text-link {
+    display: none;
+  }
+
+  .text-align-end {
+    text-align: right;
+  }
+
+  .projects-img-box {
+    flex: 0 0 400px;
+  }
+}

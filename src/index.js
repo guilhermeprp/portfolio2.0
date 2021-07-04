@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
-import App from "./landing";
-import Home from "./home/index";
+import "./global.css";
+import App from "./landing/landing.jsx";
+import Home from "./home/home.jsx";
 import reportWebVitals from "./test/reportWebVitals";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 

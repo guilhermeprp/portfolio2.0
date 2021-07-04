@@ -1,0 +1,106 @@
+#section-banner {
+  height: 100vh;
+}
+
+.background-home {
+  background-color: var(--black);
+  color: var(--white);
+  scroll-snap-type: y mandatory;
+  video {
+    transform: rotate(90deg);
+    object-fit: unset;
+    min-width: 1200px;
+  }
+}
+
+.gradient {
+  inset: 0;
+  position: absolute;
+  z-index: 1;
+  background-image: linear-gradient(to bottom, transparent, var(--black));
+}
+
+.box-titles {
+  z-index: 2;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: start;
+  padding: 0 2rem;
+
+  h4 {
+    font-size: 0.75rem;
+    letter-spacing: 10px;
+    font-weight: 200;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+}
+
+.roll-to-icon {
+  display: block;
+  width: 30px;
+  height: 50px;
+  margin: 30px auto;
+}
+
+.mouse-icon {
+  height: 100%;
+  width: 30px;
+  border-radius: 20px;
+  border: 3px solid white;
+
+  .mouse-roll {
+    animation: 1s scrollDown ease-in-out infinite alternate;
+    height: 8px;
+    width: 8px;
+    background-color: white;
+    border-radius: 50%;
+  }
+
+  &:hover {
+    box-shadow: 0 0 5px white, inset 0 0 5px white;
+  }
+
+  &:hover .mouse-roll {
+    box-shadow: 0 0 10px 1px white;
+  }
+}
+
+@keyframes scrollDown {
+  from {
+    transform: translate(8px, 5px);
+  }
+  to {
+    transform: translate(8px, 15px);
+  }
+}
+
+@media screen and (min-width: 626px) {
+  .background-home video {
+    transform: rotate(0deg);
+    object-fit: none;
+    min-width: 1920px;
+  }
+
+  .box-titles {
+    text-align: end;
+    h4 {
+      font-size: 1.2rem;
+    }
+
+    h1 {
+      font-size: 7rem;
+    }
+
+    h3 {
+      font-size: 1.75rem;
+    }
+  }
+}

@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
+import "./global.css";
 import App from "./landing/landing.jsx";
 import Home from "./home/home.jsx";
 import reportWebVitals from "./test/reportWebVitals";

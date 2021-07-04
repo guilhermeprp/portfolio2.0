@@ -1,11 +1,11 @@
 import React from "react";
-import skill_react from "../../../assets/image/skills-curriculo-react.png";
-import skill_vue from "../../../assets/image/skills-curriculo-vue.png";
-import skill_flutter from "../../../assets/image/skills-curriculo-flutter.png";
-import skill_javascript from "../../../assets/image/skills-curriculo-javascript.png";
-import skill_html from "../../../assets/image/skills-curriculo-html.png";
-import skill_sass from "../../../assets/image/skills-curriculo-sass.png";
-import skill_english from "../../../assets/image/skills-curriculo-english.png";
+import skill_react from "../../../assets/image/skills/skills-curriculo-react.png";
+import skill_vue from "../../../assets/image/skills/skills-curriculo-vue.png";
+import skill_flutter from "../../../assets/image/skills/skills-curriculo-flutter.png";
+import skill_javascript from "../../../assets/image/skills/skills-curriculo-javascript.png";
+import skill_html from "../../../assets/image/skills/skills-curriculo-html.png";
+import skill_sass from "../../../assets/image/skills/skills-curriculo-sass.png";
+import skill_english from "../../../assets/image/skills/skills-curriculo-english.png";
 import "./skills.scss";
 
 const skillsList = [

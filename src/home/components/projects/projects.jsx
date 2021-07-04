@@ -1,21 +1,28 @@
 import React from "react";
 import "./projects.scss";
+
+import "aos/dist/aos.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import genshin from "../../../assets/image/projects/genshin-dmg-site.PNG";
+import agileContent from "../../../assets/image/projects/agile-content-site.PNG";
+import stf from "../../../assets/image/projects/stf-site.PNG";
+import showOff from "../../../assets/image/projects/show-off-site.PNG";
+import unipHc from "../../../assets/image/projects/unip-hc.png";
 
 const projectsList = [
   {
     title: "Genshin DMG",
     text: "Site created for the a game called Genshin Impact, this site was maded to calculate your character damage, preventing players to waste money on weak characters.",
-    img: "",
+    img: genshin,
     imgOrder: "",
-    link: "https://genshin-dmg-calculator.vercel.app/",
+    link: "http://genshin-dmg.vercel.app/",
     linkSpan: "Site",
   },
   {
     title: "UnipHC",
     text: "Unip complementary hours is an app that help the university student to manage they hours and tasks.",
-    img: "",
+    img: unipHc,
     imgOrder: "order-2",
     link: "https://github.com/guilhermeprp/horas_c",
     linkSpan: "GitHub",
@@ -23,7 +30,7 @@ const projectsList = [
   {
     title: "STF",
     text: "Supreme Federal Court new home page with Vue.js, Sass and mobile first method, we used UI/UX to build a new page focusing on accessibility. ",
-    img: "",
+    img: stf,
     imgOrder: "",
     link: "#void",
     linkSpan: "Not in Production",
@@ -31,7 +38,7 @@ const projectsList = [
   {
     title: "AgileContent",
     text: "A challenge maded by Agile Content to build a new layout for streaming services with React.Js, Sass modules, MVC and mobile first.",
-    img: "",
+    img: agileContent,
     imgOrder: "order-2",
     link: "https://agile-content-challenge.vercel.app/",
     linkSpan: "Site",
@@ -39,7 +46,7 @@ const projectsList = [
   {
     title: "ShowOff",
     text: "A project created for studies with React.js, using the poke.api to create all Pokemon cards.",
-    img: "",
+    img: showOff,
     imgOrder: "",
     link: "#void",
     linkSpan: "GitHub",
@@ -61,8 +68,16 @@ export function Projects() {
           </div>
           <div className="projects-box-section">
             {projectsList.map((a, key) => (
-              <div id={key} className="projects-row">
-                <div className={`projects-img-box ${a.imgOrder}`}></div>
+              <div
+                data-aos={`${key % 2 === 1 ? "fade-left" : "fade-right"}`}
+                data-aos-delay="200"
+                data-aos-duration="1000"
+                key={key}
+                className="projects-row"
+              >
+                <a href={a.link} className={`projects-img-box ${a.imgOrder}`}>
+                  <img src={`${a.img}`} alt="" />
+                </a>
                 <div
                   className={`projects-description-box ${
                     key % 2 === 1 ? "text-align-end" : ""
@@ -70,7 +85,7 @@ export function Projects() {
                 >
                   <h2>{a.title}</h2>
                   <p>{a.text}</p>
-                  <a href={a.link}>
+                  <a href={a.link} className="text-link">
                     <span>{a.linkSpan}</span>
                     <FontAwesomeIcon icon={faArrowRight} />
                   </a>

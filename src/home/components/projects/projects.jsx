@@ -54,7 +54,6 @@ const projectsList = [
 ];
 
 export function Projects() {
-  console.log(projectsList);
   return (
     <section id="section-projects" className="sections">
       <div className="wrapper">

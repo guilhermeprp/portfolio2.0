@@ -6,6 +6,7 @@ import "aos/dist/aos.css";
 import { Banner } from "./components/banner/banner.jsx";
 import { Skills } from "./components/skills/skills.jsx";
 import { Projects } from "./components/projects/projects.jsx";
+import { Experience } from "./components/experience/experience.jsx";
 
 function Home() {
   useEffect(() => {
@@ -24,6 +25,7 @@ function Home() {
       <Banner />
       <Skills />
       <Projects />
+      <Experience />
     </motion.div>
   );
 }

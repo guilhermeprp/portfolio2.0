@@ -57,7 +57,11 @@
     color: hsla(360, 100%, 100%, 0.4);
     font-size: 14px;
   }
-
+  
+  p {
+    margin-bottom: 10px;
+  }
+  
   .card-ball {
     background-color: var(--bg-color-cards-light);
     position: absolute;
@@ -114,6 +118,10 @@
     h3 {
       width: fit-content !important;
       margin: unset;
+    }
+    
+    p {
+      margin-bottom: 0;
     }
   }
 }

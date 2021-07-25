@@ -57,11 +57,16 @@
     color: hsla(360, 100%, 100%, 0.4);
     font-size: 14px;
   }
-  
-  p {
+
+  p{
     margin-bottom: 10px;
   }
-  
+
+  span{
+    display: inline-block;
+    margin-bottom:7px;
+  }
+
   .card-ball {
     background-color: var(--bg-color-cards-light);
     position: absolute;
@@ -119,8 +124,9 @@
       width: fit-content !important;
       margin: unset;
     }
-    
-    p {
+
+    span{
+      display: block;
       margin-bottom: 0;
     }
   }

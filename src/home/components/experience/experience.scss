@@ -1,0 +1,123 @@
+.experience-box-section {
+  position: relative;
+  padding-left: 4rem;
+}
+
+.experience-box-section::after {
+  content: "";
+  height: 100%;
+  width: 4px;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  //   background-color: hsla(360, 100%, 100%, 0.4);
+  background: linear-gradient(
+    180deg,
+    var(--bg-color-cards) 75%,
+    hsla(0, 0%, 0%, 0) 100%
+  );
+  z-index: -1;
+}
+
+.experience-card {
+  background-color: var(--bg-color-cards);
+  padding: 10px 2rem;
+  margin-bottom: 1rem;
+  position: relative;
+  border-radius: 0 10px 10px 10px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: -19px;
+    top: 0;
+    border: 20px solid transparent;
+    border-top: 20px solid var(--bg-color-cards);
+    max-width: 20px;
+    max-height: 20px;
+  }
+
+  h3 {
+    text-align: center;
+    margin-bottom: 5px !important;
+    padding: 5px 7px;
+    background-color: var(--dark-red);
+    box-shadow: 0 0 10px var(--black);
+    border-radius: 5px;
+    width: fit-content;
+    margin: auto;
+  }
+
+  h2 {
+    font-size: 20px;
+    margin: 16px 0 8px 0;
+  }
+
+  p {
+    margin-bottom: 16px;
+  }
+
+  i {
+    color: hsla(360, 100%, 100%, 0.4);
+    font-size: 14px;
+  }
+
+  .card-ball {
+    background-color: var(--bg-color-cards-light);
+    position: absolute;
+    left: -67px;
+    top: -15px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    z-index: 5;
+  }
+}
+
+.experience-card:first-of-type {
+  h3 {
+    width: min-content;
+  }
+
+  .card-ball {
+    width: 40px;
+    height: 40px;
+    left: -71px;
+    top: -20px;
+    border: 4px solid var(--bg-color-cards-light);
+    background-color: var(--bg-color-cards-light);
+
+    &::before {
+      content: "";
+      border-radius: 50%;
+      border: 5px solid var(--bg-color-cards-light);
+      width: 40px;
+      height: 40px;
+      left: -9px;
+      top: -9px;
+      position: absolute;
+      animation: 1.5s pulse ease infinite;
+    }
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.4);
+  }
+}
+
+@media (min-width: 420px) {
+  .experience-card {
+      
+    h3 {
+      width: fit-content !important;
+      margin: unset;
+    }
+  }
+}

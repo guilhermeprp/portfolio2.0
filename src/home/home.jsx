@@ -7,6 +7,7 @@ import { Banner } from "./components/banner/banner.jsx";
 import { Skills } from "./components/skills/skills.jsx";
 import { Projects } from "./components/projects/projects.jsx";
 import { Experience } from "./components/experience/experience.jsx";
+import Footer from "./components/footer/footer";
 
 function Home() {
   useEffect(() => {
@@ -26,6 +27,7 @@ function Home() {
       <Skills />
       <Projects />
       <Experience />
+      <Footer />
     </motion.div>
   );
 }

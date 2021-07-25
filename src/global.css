@@ -1,8 +1,11 @@
 :root {
-  --pink: #fe03cb;
-  --black: #020104;
-  --white: #fff;
-  --red: #ed0839;
+  --pink: hsl(312, 99%, 50%);
+  --black: hsl(0, 0%, 10%);
+  --bg-color-cards-light:hsl(240, 22%, 50%);
+  --bg-color-cards:hsl(240, 22%, 20%);
+  --white: hsl(0, 0%, 100%);
+  --red: hsl(347, 93%, 50%);
+  --dark-red: hsl(347, 93%, 40%);
 }
 
 * {

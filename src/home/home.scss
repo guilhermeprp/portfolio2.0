@@ -8,7 +8,7 @@
 
 .wrapper {
   width: 100%;
-  padding: 0 50px;
+  padding: 0 2rem;
 }
 
 .section-title-row {
@@ -58,4 +58,13 @@
   50% {
     color: orange;
   }
+}
+
+@media (min-width:475px) {
+
+  .wrapper {
+    padding: 0 50px;
+  }
+
+
 }

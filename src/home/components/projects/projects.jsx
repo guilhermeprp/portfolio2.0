@@ -16,7 +16,7 @@ const projectsList = [
     text: "Site created for the a game called Genshin Impact, this site was maded to calculate your character damage, preventing players to waste money on weak characters.",
     img: genshin,
     imgOrder: "",
-    link: "http://genshin-dmg.vercel.app/",
+    link: "https://genshin-dmg.vercel.app/",
     linkSpan: "Site",
   },
   {
@@ -48,7 +48,7 @@ const projectsList = [
     text: "A project created for studies with React.js, using the poke.api to create all Pokemon cards.",
     img: showOff,
     imgOrder: "",
-    link: "#void",
+    link: "https://show-off-pokemon.vercel.app/",
     linkSpan: "GitHub",
   },
 ];

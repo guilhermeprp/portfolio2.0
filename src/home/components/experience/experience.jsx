@@ -13,7 +13,7 @@ const projectsList = [
   {
     title: "Anvisa - Agência Nacional de Vigilância Sanitária",
     position: "Internship",
-    description: "",
+    description: "Rede de computadores, máquinas virtuais,emissão de certificados digitais, acesso remoto, concessão de acessos, firewall.",
     startDate: "01/2019",
     endDate: "08/2019",
   },
@@ -62,7 +62,7 @@ export function Experience() {
                 >
                   <h3>{a.position}</h3>
                   <h2>{a.title}</h2>
-                  <p>{a.description.split("\n")}</p>
+                  {a.description.split("\n").map(str => <p>{str}</p>)}
                   <i>
                     {a.startDate} - {a.endDate}
                   </i>

@@ -62,7 +62,9 @@ export function Experience() {
                 >
                   <h3>{a.position}</h3>
                   <h2>{a.title}</h2>
-                  {a.description.split("\n").map(str => <p>{str}</p>)}
+                  <p>
+                  {a.description.split("\n").map(str => <span>{str}</span>)}
+                  </p>
                   <i>
                     {a.startDate} - {a.endDate}
                   </i>

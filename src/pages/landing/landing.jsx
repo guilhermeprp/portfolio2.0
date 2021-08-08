@@ -1,5 +1,5 @@
 import "./landing.scss";
-import background from "../assets/video/landing-background.mp4";
+import background from "../../assets/video/landing-background.mp4";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 

@@ -75,7 +75,7 @@ export function Projects() {
                 className="projects-row"
               >
                 <a href={a.link} className={`projects-img-box ${a.imgOrder}`}>
-                  <img src={`${a.img}`} alt="" />
+                  <img src={`${a.img}`} alt={`${a.title}`} />
                 </a>
                 <div
                   className={`projects-description-box ${

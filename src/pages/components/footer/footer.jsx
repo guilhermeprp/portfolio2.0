@@ -5,6 +5,7 @@ export default function Footer() {
     return (
         <footer>
             <h3>© 2020-2021 Guilherme Pimenta All Rights Reserved</h3>
+            <kbd>Crtl</kbd>
         </footer>
     )
 }

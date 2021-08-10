@@ -104,3 +104,12 @@
     }
   }
 }
+
+@media (min-width: 1440px) {
+  .background-home {
+    video {
+      width: 100vw;
+      object-fit: cover;
+    }
+  }
+}

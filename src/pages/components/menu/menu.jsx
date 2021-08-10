@@ -12,24 +12,30 @@ export function Menu() {
         <div className="arrow-one">
           <div className="top-bar"></div>
           <div className="bottom-bar"></div>
-        
         </div>
         <div className="arrow-two">
           <div className="top-bar"></div>
           <div className="bottom-bar"></div>
-         
         </div>
       </label>
       <nav className="navbar-body">
         <img src={Logo} alt="" />
-          <ul>
-              <li>
-                   <a href="#void"><FontAwesomeIcon icon={faHome}/> HOME</a>
-              </li>
-              <li>
-                   <a href="#void"><FontAwesomeIcon icon={faGamepad}/> ABOUT</a>                  
-              </li>
-          </ul>
+        <ul>
+          <li>
+            <center>
+              <a href="#void">
+                <FontAwesomeIcon icon={faHome} /> HOME
+              </a>
+            </center>
+          </li>
+          <li>
+            <center>
+              <a href="#void">
+                <FontAwesomeIcon icon={faGamepad} /> ABOUT
+              </a>
+            </center>
+          </li>
+        </ul>
       </nav>
     </>
   );

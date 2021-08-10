@@ -5,34 +5,47 @@
   position: fixed;
   background-color: var(--bg-color-cards);
   top: 1.5rem;
-  z-index: 10;
+  z-index: 11;
   left: 0px;
   transition: 0.5s;
   width: 100px;
   height: 70px;
   padding: 45px 55px;
   border-radius: 0px 10px 10px 0;
+  box-shadow: 8px 0 10px 0px rgba(0, 0, 0, 0.4);
+
   &:hover {
     cursor: pointer;
   }
 }
 
+#navbar-enabler:not(:checked) + .navbar-enabler-icon:hover .arrow-one > div {
+  animation: 1s 0.2s fadeInOut linear infinite;
+}
+
+#navbar-enabler:not(:checked) + .navbar-enabler-icon:hover .arrow-two > div {
+  animation: 1s fadeInOut linear infinite;
+}
+
 .navbar-enabler-icon > div {
   transition: 0.5s;
 }
+
 .navbar-enabler-icon > div > div {
   width: 30px;
   height: 10px;
-  border-radius: 3px;
   background-color: white;
 }
 
 .navbar-enabler-icon > div .top-bar {
+  border-radius: 3px 3px 0 3px;
   transform: rotate(45deg) translateY(-4px);
 }
 
 .navbar-enabler-icon > div .bottom-bar {
-  transform: rotate(-45deg) translateY(4px);
+  width: 20px;
+  border-radius: 3px 0 0 3px;
+  transform: rotate(-45deg) translate(-0.2px, 6.5px);
 }
 
 #navbar-enabler {
@@ -40,11 +53,11 @@
 }
 
 #navbar-enabler:checked + .navbar-enabler-icon {
-  left: 300px;
+  left: 200px;
 }
 
 #navbar-enabler:checked + .navbar-enabler-icon > .arrow-two {
-  transform: rotate(180deg) translateX(7px);
+  transform: rotate(180deg) translate(11px, 2px);
 }
 
 #navbar-enabler:checked + .navbar-enabler-icon > div > div {
@@ -53,7 +66,7 @@
 }
 
 #navbar-enabler:checked ~ .navbar-body {
-  width: 300px;
+  width: 200px;
 }
 
 .navbar-body {
@@ -66,6 +79,7 @@
   z-index: 10;
   background-color: var(--bg-color-cards);
   transition: 0.5s;
+  box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.5);
 
   img {
     display: block;
@@ -96,7 +110,7 @@
     }
 
     &:hover a::after {
-      right: 10%;
+      right: 5%;
       transition: 0.3s;
     }
 
@@ -109,11 +123,35 @@
       left: 0;
       right: 100%;
       backdrop-filter: invert(1) grayscale(1);
-      clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
+      clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
     }
 
     a:visited {
       color: white;
     }
+  }
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 424px) {
+  #navbar-enabler:checked + .navbar-enabler-icon {
+    left: 300px;
+  }
+
+  #navbar-enabler:checked ~ .navbar-body {
+    width: 300px;
   }
 }

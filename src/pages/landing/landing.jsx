@@ -1,7 +1,7 @@
-import "./landing.scss";
-import background from "../../assets/video/landing-background.mp4";
-import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
+import React from 'react';
+import './landing.scss';
+import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 function App() {
   return (
@@ -15,8 +15,11 @@ function App() {
       <Link to="/home" className="press-start-background">
         <h1>Press Start</h1>
       </Link>
-      <video autoPlay={true} muted={true} loop={true}>
-        <source src={background} type="video/mp4" />
+      <video autoPlay muted loop>
+        <source
+          src={`${process.env.PUBLIC_URL}/assets/video/landing-background.mp4`}
+          type="video/mp4"
+        />
       </video>
     </motion.div>
   );

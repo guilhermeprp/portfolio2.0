@@ -1,6 +1,5 @@
-import React from "react";
-import background from "../../../assets/video/home-background.mp4";
-import "./banner.scss";
+import React from 'react';
+import './banner.scss';
 
 export function Banner() {
   return (
@@ -16,18 +15,21 @@ export function Banner() {
         <h3>
           Together we will build modern interfaces for apps and websites.
           <br />
-          Hands on and let's start to work.
+          Hands on and let&apos;s start to work.
         </h3>
 
         <a href="#section-skills" className="roll-to-icon">
           <div className="mouse-icon">
-            <div className="mouse-roll"></div>
+            <div className="mouse-roll" />
           </div>
         </a>
       </div>
-      <div className="gradient"></div>
-      <video autoPlay={true} muted={true} loop={true}>
-        <source src={background} type="video/mp4" />
+      <div className="gradient" />
+      <video autoPlay muted loop>
+        <source
+          src={`${process.env.PUBLIC_URL}/assets/video/home-background.mp4`}
+          type="video/mp4"
+        />
       </video>
     </section>
   );

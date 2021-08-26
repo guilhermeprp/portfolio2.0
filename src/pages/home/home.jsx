@@ -1,14 +1,14 @@
-import React, { useEffect } from "react";
-import { motion } from "framer-motion";
-import "./home.scss";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { Banner } from "../components/banner/banner.jsx";
-import { Skills } from "../components/skills/skills.jsx";
-import { Projects } from "../components/projects/projects.jsx";
-import { Experience } from "../components/experience/experience.jsx";
-import { Menu } from "../components/menu/menu.jsx";
-import Footer from "../components/footer/footer";
+import React, { useEffect } from 'react';
+import { motion } from 'framer-motion';
+import './home.scss';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { Banner } from '../components/banner/banner';
+import { Skills } from '../components/skills/skills';
+import { Projects } from '../components/projects/projects';
+import { Experience } from '../components/experience/experience';
+import { Menu } from '../components/menu/menu';
+import Footer from '../components/footer/footer';
 
 function Home() {
   useEffect(() => {

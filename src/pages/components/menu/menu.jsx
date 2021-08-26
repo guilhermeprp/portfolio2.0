@@ -1,8 +1,7 @@
-import React from "react";
-import "./menu.scss";
-import Logo from "../../../assets/image/logo-render.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHome, faGamepad } from "@fortawesome/free-solid-svg-icons";
+import React from 'react';
+import './menu.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHome, faGamepad } from '@fortawesome/free-solid-svg-icons';
 
 export function Menu() {
   return (
@@ -10,16 +9,19 @@ export function Menu() {
       <input id="navbar-enabler" type="checkbox" />
       <label className="navbar-enabler-icon" htmlFor="navbar-enabler">
         <div className="arrow-one">
-          <div className="top-bar"></div>
-          <div className="bottom-bar"></div>
+          <div className="top-bar" />
+          <div className="bottom-bar" />
         </div>
         <div className="arrow-two">
-          <div className="top-bar"></div>
-          <div className="bottom-bar"></div>
+          <div className="top-bar" />
+          <div className="bottom-bar" />
         </div>
       </label>
       <nav className="navbar-body">
-        <img src={Logo} alt="" />
+        <img
+          src={`${process.env.PUBLIC_URL}/assets/image/logo-render.png`}
+          alt=""
+        />
         <ul>
           <li>
             <center>

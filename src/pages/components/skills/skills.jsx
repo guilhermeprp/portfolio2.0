@@ -1,34 +1,6 @@
-import React from "react";
-import skill_react from "../../../assets/image/skills/skills-curriculo-react.png";
-import skill_vue from "../../../assets/image/skills/skills-curriculo-vue.png";
-import skill_flutter from "../../../assets/image/skills/skills-curriculo-flutter.png";
-import skill_javascript from "../../../assets/image/skills/skills-curriculo-javascript.png";
-import skill_html from "../../../assets/image/skills/skills-curriculo-html.png";
-import skill_sass from "../../../assets/image/skills/skills-curriculo-sass.png";
-import skill_english from "../../../assets/image/skills/skills-curriculo-english.png";
-import "./skills.scss";
-
-const skillsList = [
-  {
-    name: "React/Native",
-    image: skill_react,
-  },
-  { name: "VueJs", image: skill_vue },
-  {
-    name: "Flutter",
-    image: skill_flutter,
-  },
-  {
-    name: "JavaScript",
-    image: skill_javascript,
-  },
-  { name: "Html", image: skill_html },
-  { name: "Sass", image: skill_sass },
-  {
-    name: "English",
-    image: skill_english,
-  },
-];
+import React from 'react';
+import './skills.scss';
+import Data from '../../../data/data.json';
 
 export function Skills() {
   return (
@@ -37,18 +9,28 @@ export function Skills() {
         <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
           <div className="section-title-row">
             <h1 className="section-title">
-              {"<"} Skills<span className="blink-caret">|</span>
+              {'<'} Skills<span className="blink-caret">|</span>
             </h1>
 
-            <div className="section-background-line"></div>
+            <div className="section-background-line" />
           </div>
           <div className="skills-box-section">
-            {skillsList.map((a, index) => (
-              <div className="skills-box" key={index}>
-                <img className="skills-shadow" src={a.image} alt="" />
-                <img className="skills" src={a.image} alt="" />
-                <p>{a.name}</p>
-              </div>
+            {Data.skills.map((element) => (
+              <>
+                <div className="skills-box" key={element.key}>
+                  <img
+                    className="skills-shadow"
+                    src={`${process.env.PUBLIC_URL}${element.image}`}
+                    alt=""
+                  />
+                  <img
+                    className="skills"
+                    src={`${process.env.PUBLIC_URL}${element.image}`}
+                    alt=""
+                  />
+                  <p>{element.name}</p>
+                </div>
+              </>
             ))}
           </div>
         </div>

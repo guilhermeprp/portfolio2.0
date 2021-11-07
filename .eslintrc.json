@@ -12,11 +12,23 @@
     "sourceType": "module",
     "project": "./jsconfig.json"
   },
-  "plugins": ["react", "import", "jsx-a11y"],
+  "plugins": ["react", "import", "prettier", "jsx-a11y"],
   "rules": {
     "linebreak-style": "off",
-    "import/prefer-default-export": "off",
+    "react/prop-types": "off",
+    "react/require-default-props": 0,
+    "class-methods-use-this": "off",
+    "react/jsx-props-no-spreading": "off",
     "jsx-a11y/label-has-associated-control": "off",
+    "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
+    "no-param-reassign": ["error", { "props": false }],
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ],
+    "import/prefer-default-export": "off",
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
   }
 }

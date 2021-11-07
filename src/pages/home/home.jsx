@@ -7,6 +7,7 @@ import { Banner } from '../components/banner/banner';
 import { Skills } from '../components/skills/skills';
 import { Projects } from '../components/projects/projects';
 import { Experience } from '../components/experience/experience';
+import { Contact } from '../components/contact/contact';
 // import { Menu } from '../components/menu/menu';
 import Footer from '../components/footer/footer';
 
@@ -29,6 +30,7 @@ function Home() {
       <Skills />
       <Projects />
       <Experience />
+      <Contact />
       <Footer />
     </motion.div>
   );

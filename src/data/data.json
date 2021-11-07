@@ -107,7 +107,7 @@
       "id": "90b9ac04-c94a-4558-93e3-ef16cef081b1",
       "title": "AILOS",
       "text": "A challenge maded by Ailos to build a CPF consultant using a fake data.",
-      "img": "/assets/image/projects/ailos.PNG",
+      "img": "/assets/image/projects/ailos.png",
       "imgOrder": "order-2",
       "link": "https://ailos-challenge.vercel.app/",
       "linkSpan": "Site"

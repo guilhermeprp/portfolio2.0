@@ -16,21 +16,19 @@ export function Skills() {
           </div>
           <div className="skills-box-section">
             {Data.skills.map((element) => (
-              <>
-                <div className="skills-box" key={element.key}>
-                  <img
-                    className="skills-shadow"
-                    src={`${process.env.PUBLIC_URL}${element.image}`}
-                    alt=""
-                  />
-                  <img
-                    className="skills"
-                    src={`${process.env.PUBLIC_URL}${element.image}`}
-                    alt=""
-                  />
-                  <p>{element.name}</p>
-                </div>
-              </>
+              <div key={element.id} className="skills-box">
+                <img
+                  className="skills-shadow"
+                  src={`${process.env.PUBLIC_URL}${element.image}`}
+                  alt=""
+                />
+                <img
+                  className="skills"
+                  src={`${process.env.PUBLIC_URL}${element.image}`}
+                  alt=""
+                />
+                <p>{element.name}</p>
+              </div>
             ))}
           </div>
         </div>

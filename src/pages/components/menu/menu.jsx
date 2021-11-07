@@ -2,6 +2,7 @@ import React from 'react';
 import './menu.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faGamepad } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
 export function Menu() {
   return (
@@ -25,16 +26,16 @@ export function Menu() {
         <ul>
           <li>
             <center>
-              <a href="#void">
+              <Link to="/home">
                 <FontAwesomeIcon icon={faHome} /> HOME
-              </a>
+              </Link>
             </center>
           </li>
           <li>
             <center>
-              <a href="#void">
+              <Link to="/about">
                 <FontAwesomeIcon icon={faGamepad} /> ABOUT
-              </a>
+              </Link>
             </center>
           </li>
         </ul>

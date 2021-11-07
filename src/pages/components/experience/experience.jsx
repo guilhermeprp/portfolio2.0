@@ -1,8 +1,16 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './experience.scss';
 import Data from '../../../data/data.json';
 
 export function Experience() {
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 385);
+
+  useEffect(() => {
+    window.addEventListener('resize', () => {
+      setIsMobile(window.innerWidth < 385);
+    });
+  }, []);
+
   return (
     <section id="section-experience" className="sections">
       <div className="wrapper">
@@ -10,7 +18,7 @@ export function Experience() {
           <div className="section-title-row">
             <h1 className="section-title">
               {'<'}
-              {window.innerWidth < 385 ? ' Xp' : ' Experience'}
+              {isMobile ? ' Xp' : ' Experience'}
               <span className="blink-caret">|</span>
             </h1>
 
@@ -18,7 +26,6 @@ export function Experience() {
           </div>
           <div className="experience-box-section">
             {Data.experience
-              .sort((a, b) => a.startDate > b.startDate && -1)
               .map((element) => (
                 <div
                   key={element.id}
@@ -30,8 +37,9 @@ export function Experience() {
                   <h3>{element.position}</h3>
                   <h2>{element.title}</h2>
                   <p>
-                    {element.description.split('\n').map((str) => (
-                      <span>{str}</span>
+                    {element.description.split('\n').map((str, index) => (
+                      // eslint-disable-next-line react/no-array-index-key
+                      <span key={index}>{str}</span>
                     ))}
                   </p>
                   <i>
@@ -39,7 +47,8 @@ export function Experience() {
                   </i>
                   <div className="card-ball" />
                 </div>
-              ))}
+              ))
+              .reverse()}
           </div>
         </div>
       </div>

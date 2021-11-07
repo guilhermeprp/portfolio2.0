@@ -7,7 +7,7 @@ import { Banner } from '../components/banner/banner';
 import { Skills } from '../components/skills/skills';
 import { Projects } from '../components/projects/projects';
 import { Experience } from '../components/experience/experience';
-import { Menu } from '../components/menu/menu';
+// import { Menu } from '../components/menu/menu';
 import Footer from '../components/footer/footer';
 
 function Home() {
@@ -24,7 +24,7 @@ function Home() {
       exit={{ opacity: 0 }}
       className="background-home"
     >
-      <Menu />
+      {/* <Menu /> */}
       <Banner />
       <Skills />
       <Projects />

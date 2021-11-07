@@ -22,15 +22,17 @@ export function Projects() {
           <div className="projects-box-section">
             {Data.projects.map((element, index) => (
               <div
+                key={element.id}
                 data-aos={`${index % 2 === 1 ? 'fade-left' : 'fade-right'}`}
                 data-aos-delay="200"
                 data-aos-duration="1000"
                 className="projects-row"
-                key={element.id}
               >
                 <a
                   href={element.link}
                   className={`projects-img-box ${element.imgOrder}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <img
                     src={`${process.env.PUBLIC_URL}${element.img}`}
@@ -44,7 +46,12 @@ export function Projects() {
                 >
                   <h2>{element.title}</h2>
                   <p>{element.text}</p>
-                  <a href={element.link} className="text-link">
+                  <a
+                    href={element.link}
+                    className="text-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <span>{element.linkSpan}</span>
                     <FontAwesomeIcon icon={faArrowRight} />
                   </a>

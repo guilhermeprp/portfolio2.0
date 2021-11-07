@@ -31,6 +31,30 @@
       "description": "Mobile first. \n Vue 2 using Vuex , SASS, Bootstrap, grid-layout, components. \n Api Rest with axios.",
       "startDate": "11/2020",
       "endDate": "07/2021"
+    },
+    {
+      "id": "42d5ce17-271f-4621-a5a7-489bfcafc680",
+      "title": "EEmovel - Inteligência Imobiliária",
+      "position": "Front-end Developer",
+      "description": "Metodologia ágeis: Kanban. \n Frameworks JS: ReactJS, React Native, Vue.js, NextJS. \n Criação de testes unitários: Jest. \n Javascript, HTML e CSS. \n Habilidades com Redux e Redux Toolkit. \n Habilidades com Storybook. \n Prototipação de interfaces. \n Task Runners (GULP, Grunt, WebPack). \n Biblioteca de componentes (ex: Ant Design, Material Design). \n UX/UI e Responsividade de interfaces. \n Git-Flow e versionamento de código. \n Consumo de APIs REST, Context API. \n Internacionalização (L10n, i18n). \n High Order-Components.",
+      "startDate": "06/2021",
+      "endDate": "11/2021"
+    },
+    {
+      "id": "986f1eaf-5403-4055-b0ef-c4ed980c7f0b",
+      "title": "Implanta Informática",
+      "position": "Front-end Developer",
+      "description": "Angular 2+ , SASS, Bootstrap, grid-layout, components. \n Api Rest with axios.",
+      "startDate": "06/2021",
+      "endDate": "Current"
+    },
+    {
+      "id": "7f653461-c614-480e-8383-b803c24ad164",
+      "title": "Mirante Tecnologia",
+      "position": "Front-end Developer",
+      "description": "Angular 2+ , SASS, Bootstrap, grid-layout, components. \n Api Rest with axios.",
+      "startDate": "11/2021",
+      "endDate": "Current"
     }
   ],
   "projects": [
@@ -77,7 +101,16 @@
       "img": "/assets/image/projects/show-off-site.PNG",
       "imgOrder": "",
       "link": "https://show-off-pokemon.vercel.app/",
-      "linkSpan": "GitHub"
+      "linkSpan": "Site"
+    },
+    {
+      "id": "90b9ac04-c94a-4558-93e3-ef16cef081b1",
+      "title": "AILOS",
+      "text": "A challenge maded by Ailos to build a CPF consultant using a fake data.",
+      "img": "/assets/image/projects/ailos.PNG",
+      "imgOrder": "order-2",
+      "link": "https://ailos-challenge.vercel.app/",
+      "linkSpan": "Site"
     }
   ],
   "skills": [

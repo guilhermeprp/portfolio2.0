@@ -4,6 +4,7 @@ import "./global.css";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import App from "./pages/landing/landing";
 import Home from "./pages/home/home";
+import About from "./pages/about/about";
 import reportWebVitals from "./test/reportWebVitals";
 
 ReactDOM.render(
@@ -11,7 +12,9 @@ ReactDOM.render(
     <BrowserRouter>
       <Switch>
         <Route path="/" exact component={App} />
-        <Route path="/Home" exact component={Home} />
+        <Route path="/home" exact component={Home} />
+        <Route path="/about" exact component={About} />
+        {/* <Route path="/contact" exact component={Contact} /> */}
       </Switch>
     </BrowserRouter>
   </React.StrictMode>,

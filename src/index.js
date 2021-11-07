@@ -1,17 +1,20 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./global.css";
-import App from "./landing/landing.jsx";
-import Home from "./home/home.jsx";
-import reportWebVitals from "./test/reportWebVitals";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
+import App from "./pages/landing/landing";
+import Home from "./pages/home/home";
+import About from "./pages/about/about";
+import reportWebVitals from "./test/reportWebVitals";
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <Switch>
-        <Route path="/" exact={true} component={App} />
-        <Route path="/Home" exact={true} component={Home} />
+        <Route path="/" exact component={App} />
+        <Route path="/home" exact component={Home} />
+        <Route path="/about" exact component={About} />
+        {/* <Route path="/contact" exact component={Contact} /> */}
       </Switch>
     </BrowserRouter>
   </React.StrictMode>,

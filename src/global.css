@@ -1,8 +1,8 @@
 :root {
   --pink: hsl(312, 99%, 50%);
   --black: hsl(0, 0%, 10%);
-  --bg-color-cards-light:hsl(240, 22%, 50%);
-  --bg-color-cards:hsl(240, 22%, 20%);
+  --bg-color-cards-light: hsl(240, 22%, 50%);
+  --bg-color-cards: hsl(240, 22%, 20%);
   --white: hsl(0, 0%, 100%);
   --red: hsl(347, 93%, 50%);
   --dark-red: hsl(347, 93%, 40%);
@@ -14,7 +14,7 @@
   box-sizing: border-box;
   text-decoration: none;
   scroll-behavior: smooth;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   scrollbar-width: 0;
 }
 
@@ -22,8 +22,8 @@ body {
   background-color: var(--black);
   margin: 0;
   overflow-x: hidden;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -36,7 +36,7 @@ video {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 

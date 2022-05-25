@@ -12,7 +12,7 @@
       "id": "a4840dec-4594-40fe-9085-c05598467051",
       "title": "Anvisa - Agência Nacional de Vigilância Sanitária",
       "position": "Internship",
-      "description": "Rede de computadores, máquinas virtuais,emissão de certificados digitais, acesso remoto, concessão de acessos, firewall.",
+      "description": "Computer network, virtual box. \n Virtual certificates shipping. \n Firewall and remote access management.",
       "startDate": "01/2019",
       "endDate": "08/2019"
     },
@@ -20,7 +20,7 @@
       "id": "8e22ea42-3043-4ec7-bfd8-4e965ed1dce5",
       "title": "EBC - Empresa Brasil Comunicação",
       "position": "Web Developer",
-      "description": "Back-end Development - Node.js, Postgres, Api REST.\n Front-end - React, React Native.\n Desktop applications - Java 8, Maven, Docker. \nOS - Linux and Windows.Monitoring - Zabbix, Grafana. \nData analyze - Elasticsearch e PowerBI.",
+      "description": "Backend Web Development - Node.js, Postgres and Api REST. \n Software Development - Java 8, Maven, Docker and Linux. \n Front end - React and React Native. \n Monitoring - Zabbix and Grafana. \n Data Analysis - Elasticsearch and PowerBI.",
       "startDate": "09/2019",
       "endDate": "10/2020"
     },
@@ -28,31 +28,31 @@
       "id": "c39e9f77-8bb6-4b02-a6a7-b7f2a1c81bf6",
       "title": "STF - Supremo Tribunal Federal",
       "position": "Front-end Developer",
-      "description": "Mobile first. \n Vue 2 using Vuex , SASS, Bootstrap, grid-layout, components. \n Api Rest with axios.",
+      "description": "Mobile first. \n Vue 2 - Vuex , SASS, Bootstrap, grid-layout. \n Api Rest consuming with axios. \n API Build - NodeJs and Express. \n UI tests with Cypress and tasks automate with Gulp.",
       "startDate": "11/2020",
       "endDate": "07/2021"
-    },
-    {
-      "id": "42d5ce17-271f-4621-a5a7-489bfcafc680",
-      "title": "EEmovel - Inteligência Imobiliária",
-      "position": "Front-end Developer",
-      "description": "Metodologia ágeis: Kanban. \n Frameworks JS: ReactJS, React Native, Vue.js, NextJS. \n Criação de testes unitários: Jest. \n Javascript, HTML e CSS. \n Habilidades com Redux e Redux Toolkit. \n Habilidades com Storybook. \n Prototipação de interfaces. \n Task Runners (GULP, Grunt, WebPack). \n Biblioteca de componentes (ex: Ant Design, Material Design). \n UX/UI e Responsividade de interfaces. \n Git-Flow e versionamento de código. \n Consumo de APIs REST, Context API. \n Internacionalização (L10n, i18n). \n High Order-Components.",
-      "startDate": "06/2021",
-      "endDate": "11/2021"
     },
     {
       "id": "986f1eaf-5403-4055-b0ef-c4ed980c7f0b",
       "title": "Implanta Informática",
       "position": "Front-end Developer",
-      "description": "Angular 2+ , SASS, Bootstrap, grid-layout, components. \n Api Rest with axios.",
+      "description": "Agile method: Scrum. \n Code versioning on Azure. \n Framework: Angular 2+. \n Manutention on Legacy projects with: Html, Sass, Javascript, Bootstrap. \n Skills with Illustrator for svg icons creation.",
+      "startDate": "07/2021",
+      "endDate": "02/2022"
+    },
+    {
+      "id": "42d5ce17-271f-4621-a5a7-489bfcafc680",
+      "title": "EEmovel - Inteligência Imobiliária",
+      "position": "Front-end Engineer",
+      "description": "Agile Methods: Scrum/Kanban. \n Frameworks JS: ReactJS, NextJS. \n Unit test: Jest. \n Javascript, HTML and CSS. \n Skills with Redux and Redux Toolkit. \n Skills with Storybook. \n Screen prototyping. \n Task Runners (Vite, WebPack). \n Azure pipelines and artifacts configuration. \n Library components (ex: Ant Design, Material Design). \n UX/UI and responsive interfaces. \n Git-Flow and code versioning. \n APIs REST, Context API. \n Internationalization (L10n, i18n, nls). \n High Order-Components.",
       "startDate": "06/2021",
       "endDate": "Current"
     },
     {
       "id": "7f653461-c614-480e-8383-b803c24ad164",
-      "title": "Mirante Tecnologia",
-      "position": "Front-end Developer",
-      "description": "Angular 2+ , SASS, Bootstrap, grid-layout, components. \n Api Rest with axios.",
+      "title": "Ailos - Cooperativa Central",
+      "position": "Front-end Engineer",
+      "description": "Agile Methods: Scrum. \n Frameworks JS: Angular 13. \n Typescript, HTML and CSS/Sass. \n Accessibility WCAG. \n Skills with ngRX. \n Skills with ZeroHeight. \n Facade Archtecture. \n Task runner: Webpack. \n UX/UI and responsive interfaces. \n Git-Flow and code versioning. \n APIs REST. \n High Order-Components. \n Angular Matherial. \n Skills with After Effects and Premiere for demonstrative programming videos.",
       "startDate": "11/2021",
       "endDate": "Current"
     }
@@ -116,18 +116,23 @@
   "skills": [
     {
       "id": "a7687430-e0b3-46f9-91c2-64b731fdea07",
-      "name": "ReactNative",
+      "name": "React",
       "image": "/assets/image/skills/skills-curriculo-react.png"
     },
     {
+      "id": "a1470982-dc43-11ec-9d64-0242ac120002",
+      "name": "Angular",
+      "image": "/assets/image/skills/skills-curriculo-angular.png"
+    },
+    {
       "id": "0bd9b7e3-c29a-4064-b7da-58b93383d3f6",
-      "name": "VueJs",
+      "name": "Vue",
       "image": "/assets/image/skills/skills-curriculo-vue.png"
     },
     {
-      "id": "79684886-bb22-448a-8578-4277be835fc0",
-      "name": "Flutter",
-      "image": "/assets/image/skills/skills-curriculo-flutter.png"
+      "id": "98310a64-dc43-11ec-9d64-0242ac120002",
+      "name": "Typescript",
+      "image": "/assets/image/skills/skills-curriculo-typescript.png"
     },
     {
       "id": "4261d404-8b8d-49b5-ad5f-c1abf3d7c54a",
@@ -135,19 +140,19 @@
       "image": "/assets/image/skills/skills-curriculo-javascript.png"
     },
     {
+      "id": "79684886-bb22-448a-8578-4277be835fc0",
+      "name": "Flutter",
+      "image": "/assets/image/skills/skills-curriculo-flutter.png"
+    },
+    {
       "id": "727f24dc-aeba-4ae1-8145-e5c2266d7f6f",
-      "name": "Html",
+      "name": "Html5",
       "image": "/assets/image/skills/skills-curriculo-html.png"
     },
     {
       "id": "e2dbce0d-aa76-4053-bbbb-dfcf124a8cb9",
       "name": "Sass",
       "image": "/assets/image/skills/skills-curriculo-sass.png"
-    },
-    {
-      "id": "1bea6f32-18da-46e4-861a-5a4742fd3fc1",
-      "name": "English",
-      "image": "/assets/image/skills/skills-curriculo-english.png"
     }
   ]
 }

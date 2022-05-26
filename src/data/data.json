@@ -62,7 +62,7 @@
       "id": "a1aee3bd-50e1-4c5a-886e-5dd63120061d",
       "title": "Genshin DMG",
       "text": "Site created for the a game called Genshin Impact, this site was maded to calculate your character damage, preventing players to waste money on weak characters.",
-      "img": "/assets/image/applications/genshin-dmg-site.PNG",
+      "img": "/assets/image/applications/genshin-dmg-site.png",
       "imgOrder": "",
       "link": "https://genshin-dmg.vercel.app/",
       "linkSpan": "Site"
@@ -80,7 +80,7 @@
       "id": "2119301b-f804-4b6f-bd9e-d01288222a06",
       "title": "STF",
       "text": "Supreme Federal Court new home page with Vue.js, Sass and mobile first method, we used UI/UX to build a new page focusing on accessibility. ",
-      "img": "/assets/image/applications/stf-site.PNG",
+      "img": "/assets/image/applications/stf-site.png",
       "imgOrder": "",
       "link": "#void",
       "linkSpan": "Not in Production"
@@ -89,7 +89,7 @@
       "id": "8e3de234-6ab5-419c-aaeb-3fd17016524d",
       "title": "AgileContent",
       "text": "A challenge maded by Agile Content to build a new layout for streaming services with React.Js, Sass modules, MVC and mobile first.",
-      "img": "/assets/image/applications/agile-content-site.PNG",
+      "img": "/assets/image/applications/agile-content-site.png",
       "imgOrder": "order-2",
       "link": "https://agile-content-challenge.vercel.app/",
       "linkSpan": "Site"
@@ -98,7 +98,7 @@
       "id": "f24aaa4d-39f0-41dd-ac88-7dd2d8cf9249",
       "title": "ShowOff",
       "text": "A project created for studies with React.js, using the poke.api to create all Pokemon cards.",
-      "img": "/assets/image/applications/show-off-site.PNG",
+      "img": "/assets/image/applications/show-off-site.png",
       "imgOrder": "",
       "link": "https://show-off-pokemon.vercel.app/",
       "linkSpan": "Site"
@@ -107,7 +107,7 @@
       "id": "90b9ac04-c94a-4558-93e3-ef16cef081b1",
       "title": "AILOS",
       "text": "A challenge maded by Ailos to build a CPF consultant using a fake data.",
-      "img": "/assets/image/applications/ailos.PNG",
+      "img": "/assets/image/applications/ailos.png",
       "imgOrder": "order-2",
       "link": "https://ailos-challenge.vercel.app/",
       "linkSpan": "Site"
